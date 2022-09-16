@@ -1,0 +1,30 @@
+.card {
+  border-radius: 4rem;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photoContainer {}
+
+.generalInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageType {
+  color: grey;
+}
+
+.cardIcons {
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.detailedInfo {
+  flex-direction: column;
+}
