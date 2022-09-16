@@ -1,0 +1,4 @@
+.allBloggers {
+  display: flex;
+  flex-wrap: wrap;
+}

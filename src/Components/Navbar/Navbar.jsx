@@ -9,44 +9,44 @@ function Navbar() {
       <div className={classes.burgerMenu}>
         smth
         <div className={classes.logo}>
-          <img alt="logo" height="25" width="140" src="../../../public/pics/Logo.png" />
+          <img alt="logo" height="25" width="140" src="./pics/Logo.png" />
         </div>
       </div>
       <nav className={classes.navBtns}>
         <div className={classes.navItem}>
-          <img alt="advertIcon" src="../../../public/pics/AdvertNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Купить рекламу</NavLink>
+          <img alt="advertIcon" src="./pics/AdvertNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Купить рекламу</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="groupIcon" src="../../../public/pics/GroupNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/">Список блогеров </NavLink>
+          <img alt="groupIcon" src="./pics/GroupNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/">Список блогеров </NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="campaignIcon" src="../../../public/pics/CampaignNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Мои кампании</NavLink>
+          <img alt="campaignIcon" src="./pics/CampaignNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Мои кампании</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="statsIcon" src="../../../public/pics/StatsNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Статистика</NavLink>
+          <img alt="statsIcon" src="./pics/StatsNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Статистика</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="walletIcon" src="../../../public/pics/WalletNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Финансы</NavLink>
+          <img alt="walletIcon" src="./pics/WalletNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Финансы</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="blogIcon" src="../../../public/pics/BlogNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Блог</NavLink>
+          <img alt="blogIcon" src="./pics/BlogNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Блог</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="newsIcon" src="../../../public/pics/NewsNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Новости</NavLink>
+          <img alt="newsIcon" src="./pics/NewsNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Новости</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="helpIcon" src="../../../public/pics/HelpNavIcon.png" width="20" height="20" />
-          <NavLink activeClassName={classes.activeNavItem} to="/notYet">Помощь</NavLink>
+          <img alt="helpIcon" src="./pics/HelpNavIcon.png" width="20" height="20" />
+          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Помощь</NavLink>
         </div>
         <div className={classes.navItem}>
-          <img alt="pertnerIcon" src="../../../public/pics/PartnerNavIcon.png" width="20" height="20" />
+          <img alt="pertnerIcon" src="./pics/PartnerNavIcon.png" width="20" height="20" />
           <NavLink>Стать партнером</NavLink>
         </div>
       </nav>

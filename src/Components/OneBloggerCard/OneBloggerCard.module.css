@@ -1,5 +1,8 @@
 .card {
   border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
 }
 
 .cardTop {
@@ -11,7 +14,7 @@
 
 .generalInfo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .pageType {
@@ -25,6 +28,42 @@
   align-self: center;
 }
 
-.detailedInfo {
+.details {
   flex-direction: column;
+}
+
+.datailsLine {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detailsName {
+  color: grey;
+}
+
+.detailsNumbers {}
+
+.infoIcon {}
+
+.cardBtm {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.likeBtn {
+  border-radius: 4rem;
+  color: blue;
+  border-style: solid;
+  border: 1rem;
+  border-color: blue;
+}
+
+.likeBtnClicked {
+  border-radius: 4rem;
+  color: white;
+  background-color: blue;
+}
+
+.price {
+  font-weight: bolder;
 }
