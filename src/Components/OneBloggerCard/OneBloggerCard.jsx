@@ -1,47 +1,22 @@
 import React, { useState } from 'react';
+import { numbersStyle, ratingColor } from '../../helpers/helpers';
 import classes from './OneBloggerCard.module.css';
 
 function OneBloggerCard({ data }) {
   const [flag, setFlag] = useState(false);
-  const [btnStyle, setBtnStyle] = useState(`${classes.likeBtn}`);
 
   const clickHandler = (e) => {
     e.preventDefault();
     setFlag(!flag);
-    setBtnStyle(flag ? `${classes.likeBtnClicked}` : `${classes.likeBtn}`);
   };
 
-  // const numbersStyle = (str) => str.split('').reverse()
-  //   .map((el, i) => ((i + 1) % 3 === 0 ? `${` ${el}`}` : el))
-  //   .reverse()
-  //   .join('');
-
-  function numbersStyle(arg) {
-    const x = arg.split('').reverse()
-      .map((el, i) => ((i + 1) % 3 === 0 ? `${` ${el}`}` : el))
-      .reverse()
-      .join('');
-    return x;
-  }
-
-  const ratingColor = (num) => {
-    if (num < 4) {
-      return 'grey';
-    }
-    if (num < 8) {
-      return 'yellow';
-    }
-    return 'green';
-  };
-
-  // console.log('````````````````````', numbersStyle(data.subscribersNumber));
   const name = data.account.length > 13 ? `${data.account.substring(0, 12)}...` : data.account;
   const title = data.account.length > 13 ? data.account : null;
   return (
     <div className={classes.card}>
       <div className={classes.cardTop}>
         <div className={classes.photoContainer}>
-          <img alt="bloggerPhoto" src={data.photo} />
+          <img alt="bloggerPhoto" src={data.photo} height="64" />
         </div>
         <div className={classes.generalInfo}>
           <h3 title={title}>
@@ -55,16 +30,16 @@ function OneBloggerCard({ data }) {
         </div>
       </div>
       <div className={classes.cardIcons}>
-        <img alt="statsCardIcon" src="./pics/cardBtnStats.png" />
-        <img alt="checkedCardIcon" src="./pics/cardBtnCheck.png" />
-        <img alt="gropuCardIcon" src="./pics/cardBtnGroup.png" />
+        <img alt="statsCardIcon" src="./pics/cardBtnStats.png" width="22" height="20" />
+        <img alt="checkedCardIcon" src="./pics/cardBtnCheck.png" width="22" height="20" />
+        <img alt="gropuCardIcon" src="./pics/cardBtnGroup.png" width="22" height="20" />
       </div>
       <div className={classes.details}>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>Подписчиков</span>
           <span className={classes.detailsNumbers}>{numbersStyle(data.subscribersNumber)}</span>
         </div>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>
             Просм. сторис
             {' '}
@@ -72,7 +47,7 @@ function OneBloggerCard({ data }) {
           </span>
           <span className={classes.detailsNumbers}>{(data.storiesWatched)}</span>
         </div>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>
             Качество аккаунта
             {' '}
@@ -83,15 +58,15 @@ function OneBloggerCard({ data }) {
             /10
           </span>
         </div>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>Сторис в день</span>
           <span className={classes.detailsNumbers}>{data.storiesPerDay}</span>
         </div>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>Цена за 1к просм.</span>
           <span className={classes.detailsNumbers}>{numbersStyle(data.pricePer1K)}</span>
         </div>
-        <div className={classes.detailsLine}>
+        <div className={classes.oneLine}>
           <span className={classes.detailsName}>
             Рекомендов. цена
             {' '}
@@ -101,9 +76,17 @@ function OneBloggerCard({ data }) {
         </div>
       </div>
       <div className={classes.cardBtm}>
-        <button onClick={clickHandler} type="button" className={btnStyle}>
-          {flag ? 'В избранном' : 'В избранные'}
-        </button>
+        {flag
+          ? (
+            <button onClick={clickHandler} type="button" className={classes.likeBtnClicked}>
+              В избранном
+            </button>
+          )
+          : (
+            <button onClick={clickHandler} type="button" className={classes.likeBtn}>
+              В избранные
+            </button>
+          )}
         <div className={classes.price}>
           123 599 P
         </div>

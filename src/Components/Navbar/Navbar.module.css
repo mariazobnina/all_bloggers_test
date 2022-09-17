@@ -1,25 +1,65 @@
 .navbar {
-  max-width: 20rem;
-  min-width: 20rem;
+  max-width: 18rem;
+  min-width: 18rem;
   left: 0;
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
+  height: 100vh;
+  padding-left: 3rem;
 }
 
 .burgerMenu {
   flex-direction: row;
 }
 
+.navBtns {
+  display: flex;
+  flex-direction: column;
+}
+
 .navItem {
   flex-direction: row;
-  border-radius: 4rem;
+  border-radius: 10px;
+  width: 200px;
+  height: 36px;
+  text-decoration: none;
+  text-align: left;
+  line-height: 36px;
+  margin-bottom: 1.5rem;
 }
 
-.navBtn:hover {
-  background-color: grey;
+.navItem span {
+  text-decoration: none;
+  color: #2B2B30;
+  font-size: 140%;
+  margin-left: 1rem;
 }
 
-.activeNavItem {
-  background-color: blue;
+.navItem:hover {
+  background-color: #F2F2F2
+}
+
+/* .activeNavItem {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
   color: white;
 }
+
+.navItem .active {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
+  color: white;
+}
+
+.smth {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
+  color: white;
+}
+
+.active {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
+  color: white;
+} */

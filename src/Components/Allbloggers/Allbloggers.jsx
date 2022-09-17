@@ -7,7 +7,15 @@ function Allbloggers() {
   const bloggersInfo = fourBloggers;
   return (
     <div className={classes.allBloggers}>
-      {bloggersInfo.map((el, i) => <OneBloggerCard key={i} data={el} />)}
+      <div className={classes.allBloggersTop}>
+        <div>
+          <h1>Все блогеры</h1>
+        </div>
+        <div className={classes.search}> ПОИСК </div>
+      </div>
+      <div className={classes.cardContainer}>
+        {bloggersInfo.map((el, i) => <OneBloggerCard key={i} data={el} />)}
+      </div>
     </div>
   );
 }

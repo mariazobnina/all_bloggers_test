@@ -1,4 +1,15 @@
-.allBloggers {
+.allBloggersTop {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  max-width: 90%;
+  margin-left: 3rem;
+  max-height: 90%;
 }

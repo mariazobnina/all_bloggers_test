@@ -1,8 +1,16 @@
 .card {
-  border-radius: 4rem;
+  box-sizing: border-box;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
+  width: 17rem;
+  height: 23rem;
+  box-shadow: 0px 8px 18px rgba(101, 115, 130, 0.14);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #FFFF;
+  padding: 1rem;
+  padding-top: 1.8rem;
 }
 
 .cardTop {
@@ -10,15 +18,20 @@
   justify-content: space-around;
 }
 
-.photoContainer {}
-
 .generalInfo {
   display: flex;
   flex-direction: column;
 }
 
+.generalInfo h3 {
+  margin: .1rem;
+  color: #2B2B30;
+}
+
 .pageType {
-  color: grey;
+  color: #AAAAAC;
+  margin: .1rem;
+  font-size: 90%;
 }
 
 .cardIcons {
@@ -26,42 +39,65 @@
   align-content: center;
   justify-self: center;
   align-self: center;
+  margin: .2rem
+}
+
+.cardIcons img:hover {
+  cursor: pointer;
 }
 
 .details {
   flex-direction: column;
 }
 
-.datailsLine {
+.oneLine {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: .9rem;
 }
 
 .detailsName {
-  color: grey;
+  color: #AAAAAC;
 }
 
-.detailsNumbers {}
+.detailsNumbers {
+  color: #565659;
+}
 
 .infoIcon {}
 
 .cardBtm {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .likeBtn {
-  border-radius: 4rem;
-  color: blue;
+  border-radius: 8px;
+  color: #3277F6;
   border-style: solid;
   border: 1rem;
-  border-color: blue;
+  border-color: #3277F6;
+  width: 10rem;
+  height: 2rem;
 }
 
 .likeBtnClicked {
-  border-radius: 4rem;
+  border-radius: 8px;
+  border: 1px solid #3277F6;
   color: white;
-  background-color: blue;
+  background-color: #3277F6;
+  width: 10rem;
+  height: 2rem;
+}
+
+.likeBtn:hover {
+  cursor: pointer;
+}
+
+.likeBtnClicked:hover {
+  cursor: pointer;
 }
 
 .price {

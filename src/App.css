@@ -1,9 +1,14 @@
 .App {
   text-align: center;
   display: flex;
+  font-size: 13px;
+  /* font-family: 'SF Pro Text'; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -12,7 +17,20 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+.active {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
+  color: white;
 }
+
+.active span {
+  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
+  border-radius: 10px;
+  color: white;
+}
+
 
 .App-header {
   background-color: #282c34;
