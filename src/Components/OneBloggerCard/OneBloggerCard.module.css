@@ -59,6 +59,7 @@
 
 .detailsName {
   color: #AAAAAC;
+  display: flex;
 }
 
 .detailsNumbers {
