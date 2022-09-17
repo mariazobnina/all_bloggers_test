@@ -2,7 +2,7 @@ import React from 'react';
 
 function NotYet() {
   return (
-    <div>NotYet</div>
+    <div>Nothing here yet</div>
   );
 }
 

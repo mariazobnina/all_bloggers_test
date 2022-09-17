@@ -59,45 +59,6 @@ function Navbar() {
           <span>Стать партнером</span>
         </NavLink>
 
-        {/* <NavLink
-          to="/"
-          className={setActive}
-        >
-          <img alt="advertIcon" src="./pics/AdvertNavIcon.png" width="20" height="20" />
-          Купить рекламу
-        </NavLink>
-        <div className={classes.navItem}>
-          <img alt="groupIcon" src="./pics/GroupNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Список блогеров </NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="campaignIcon" src="./pics/CampaignNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Мои кампании</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="statsIcon" src="./pics/StatsNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Статистика</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="walletIcon" src="./pics/WalletNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Финансы</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="blogIcon" src="./pics/BlogNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Блог</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="newsIcon" src="./pics/NewsNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Новости</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="helpIcon" src="./pics/HelpNavIcon.png" width="20" height="20" />
-          <NavLink activeclassname={classes.activeNavItem} to="/notYet">Помощь</NavLink>
-        </div>
-        <div className={classes.navItem}>
-          <img alt="pertnerIcon" src="./pics/PartnerNavIcon.png" width="20" height="20" />
-          <NavLink>Стать партнером</NavLink>
-        </div> */}
       </nav>
     </div>
   );

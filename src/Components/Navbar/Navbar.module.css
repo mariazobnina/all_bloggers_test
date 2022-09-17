@@ -27,11 +27,11 @@
   text-align: left;
   line-height: 36px;
   margin-bottom: 1.5rem;
+  color: #2B2B30;
 }
 
 .navItem span {
   text-decoration: none;
-  color: #2B2B30;
   font-size: 140%;
   margin-left: 1rem;
 }
@@ -39,27 +39,3 @@
 .navItem:hover {
   background-color: #F2F2F2
 }
-
-/* .activeNavItem {
-  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
-  border-radius: 10px;
-  color: white;
-}
-
-.navItem .active {
-  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
-  border-radius: 10px;
-  color: white;
-}
-
-.smth {
-  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
-  border-radius: 10px;
-  color: white;
-}
-
-.active {
-  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
-  border-radius: 10px;
-  color: white;
-} */

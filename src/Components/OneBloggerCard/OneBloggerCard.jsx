@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { numbersStyle, ratingColor } from '../../helpers/helpers';
+import InfoIcon from '../InfoIcon/InfoIcon';
 import classes from './OneBloggerCard.module.css';
 
 function OneBloggerCard({ data }) {
@@ -43,7 +44,7 @@ function OneBloggerCard({ data }) {
           <span className={classes.detailsName}>
             Просм. сторис
             {' '}
-            <img alt="infoIcon" src="./pics/infoIcon.png" className={classes.infoIcon} />
+            <InfoIcon info="кол-во сторис" />
           </span>
           <span className={classes.detailsNumbers}>{(data.storiesWatched)}</span>
         </div>
@@ -51,7 +52,7 @@ function OneBloggerCard({ data }) {
           <span className={classes.detailsName}>
             Качество аккаунта
             {' '}
-            <img alt="infoIcon" src="./pics/infoIcon.png" className={classes.infoIcon} />
+            <InfoIcon info="оценка аккаунта" />
           </span>
           <span className={classes.detailsNumbers}>
             <span style={{ color: `${ratingColor(data.rating)}` }}>{data.rating}</span>
@@ -70,7 +71,7 @@ function OneBloggerCard({ data }) {
           <span className={classes.detailsName}>
             Рекомендов. цена
             {' '}
-            <img alt="infoIcon" src="./pics/infoIcon.png" className={classes.infoIcon} />
+            <InfoIcon info="лучшая цена" />
           </span>
           <span className={classes.detailsNumbers}>{numbersStyle(data.priceRecomended)}</span>
         </div>

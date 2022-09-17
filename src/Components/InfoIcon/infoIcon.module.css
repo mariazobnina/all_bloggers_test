@@ -1,29 +1,10 @@
-.App {
-  text-align: center;
-  display: flex;
-  font-size: 13px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-.active {
-  background: linear-gradient(122.7deg, #669BFB 0%, #3277F6 100%);
-  border-radius: 10px;
-}
-
-
-.active span {
-  color: white;
-}
-
-
 [data-tooltip] {
   --arrow-size: 5px;
   position: relative;
   z-index: 10;
 }
 
+/* Positioning and visibility settings of the tooltip */
 [data-tooltip]:before,
 [data-tooltip]:after {
   position: absolute;
@@ -36,6 +17,7 @@
   will-change: transform;
 }
 
+/* The actual tooltip with a dynamic width */
 [data-tooltip]:before {
   content: attr(data-tooltip);
   padding: 10px 18px;
@@ -57,29 +39,42 @@
   transform: translate(-50%, calc(0px - var(--arrow-size))) scale(0.5);
 }
 
+/* Tooltip arrow */
 [data-tooltip]:after {
   content: '';
   border-style: solid;
   border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size);
+  /* CSS triangle */
   border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
   transition-duration: 0s;
+  /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
   transform-origin: top;
+  /* Orientation setting for the
+                              slide-down effect */
   transform: translateX(-50%) scaleY(0);
 }
 
+/* Tooltip becomes visible at hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
 }
 
+/* Scales from 0.5 to 1 -> grow effect */
 [data-tooltip]:hover:before {
   transition-delay: 0.3s;
   transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
 }
 
+/* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
 [data-tooltip]:hover:after {
   transition-delay: 0.5s;
+  /* Starting after the grow effect */
   transition-duration: 0.2s;
   transform: translateX(-50%) scaleY(1);
 }
