@@ -7,7 +7,7 @@ import PaginationPages from '../Pagination/PaginationPages';
 function Allbloggers() {
   const [bloggersInfoFiltered, setBloggersInfoFiltered] = useState(fourBloggers);
   const [currentPage, setCurrentPage] = useState(1);
-  const [bloggersPerPage, setBloggersPerPage] = useState(5);
+  const [bloggersPerPage] = useState(8);
 
   const [searchQuery, setSearchQuery] = useState('');
 
