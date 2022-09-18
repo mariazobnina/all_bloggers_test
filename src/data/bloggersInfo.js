@@ -47,6 +47,13 @@ const blogger4 = {
 };
 
 const fourBloggers = [blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
+  blogger1, blogger2, blogger3, blogger4,
   blogger1, blogger2, blogger3, blogger4];
 
 export default fourBloggers;
