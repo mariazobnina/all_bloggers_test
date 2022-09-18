@@ -1,3 +1,7 @@
+.allBloggers {
+  margin: 3rem;
+}
+
 .allBloggersTop {
   display: flex;
   flex-direction: row;
@@ -7,21 +11,17 @@
 
 .cardContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 90%;
-  margin-left: 3rem;
-  max-height: 90%;
+  justify-content: space-between;
 }
 
 .search {
-  width: 325px;
-  height: 36px;
+  width: 15rem;
+  height: 2rem;
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(23, 9, 68, 0.03);
   border-radius: 8px;
   display: inline-flex;
-
   padding: 10px;
 }
 
@@ -35,4 +35,15 @@
 .search input {
   border: transparent;
   border: 0;
+}
+
+@media (max-width: 768px) {
+
+  .allBloggers {
+    margin: 4rem;
+  }
+
+  .allBloggersTop {
+    flex-direction: column;
+  }
 }
